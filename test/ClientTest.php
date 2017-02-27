@@ -40,7 +40,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
 
     public function testClientFeed()
     {
-        $client = new Client('key', 'secret', $location='qa');
+        $client = new Client('key', 'secret', $location='sni');
         $feed1 = $client->feed('flat', '1');
     }
 }

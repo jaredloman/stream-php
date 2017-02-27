@@ -20,7 +20,7 @@ class IntegrationTest extends \PHPUnit_Framework_TestCase
             'v1.0',
             getenv('STREAM_REGION')
         );
-        $this->client->setLocation('qa');
+        $this->client->setLocation('sni');
         $this->client->timeout = 10000;
         $this->user1 = $this->client->feed('user', '11');
         $this->aggregated2 = $this->client->feed('aggregated', '22');
